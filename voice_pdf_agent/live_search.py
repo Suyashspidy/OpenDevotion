@@ -129,7 +129,7 @@ class PDFViewer(tk.Toplevel):
         else:
             self._tk_root = None
         super().__init__(master)
-        self.title("Live PDF Search")
+        self.title("OpenDevotion — Live Search")
         self.position_tracker = position_tracker
         self.images = images
         self.pages_text = pages_text
