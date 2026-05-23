@@ -2,11 +2,13 @@
 
 An AI-powered real-time lyric assistant for live bhajan and keertan performances. Listens to the microphone, identifies the bhajan being sung using a semantic FAISS index built from your PDF songbook, and scrolls the PDF to the correct page automatically.
 
+The IndicWhisper model is fine-tuned specifically on Hindi and Sanskrit bhajan audio using AMD GPU cloud credits, giving it significantly higher accuracy on devotional music than a general-purpose speech model.
+
 ---
 
 ## Features
 
-- **Real-time ASR** — IndicWhisper (fine-tuned for Indian devotional music) or standard Whisper Medium/Small
+- **Real-time ASR** — IndicWhisper fine-tuned on bhajan audio via AMD GPU cloud training, or standard Whisper Medium/Small
 - **Semantic search** — FAISS index over your PDF songbooks; handles OCR-scanned Hindi/Sanskrit books
 - **Auto page tracking** — live PDF viewer scrolls to the matching page as the singing progresses
 - **Setlist mode** — pre-load up to 5 bhajans; optional ordered progression (1 → 2 → 3 …)
