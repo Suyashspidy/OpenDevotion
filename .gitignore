@@ -1,0 +1,39 @@
+# Claude Code project config
+.claude/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.env
+
+# Virtual environments
+.venv/
+.venv-index/
+
+# FAISS index files — rebuild with build_index.py + remap_bhajans.py
+*.faiss
+*.npy
+*.embed_model.json
+*.bhajans.json
+*.tfidf.json
+
+# Training / fine-tuning artifacts
+*.csv
+outputs/
+data/
+prepare_log.txt
+err.txt
+expanded_urls.txt
+urls.txt
+
+# Setlist state (machine-local)
+setlist_save.json
+
+# Test scratch files
+ocr_test*.txt
+test_page*.png
+
+# OS
+.DS_Store
+Thumbs.db

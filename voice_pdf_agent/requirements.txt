@@ -6,7 +6,6 @@ torch>=1.12.0
 torchaudio
 python-dotenv>=0.21.0
 soundfile
-pydub
 tqdm
 sounddevice
 Pillow
@@ -18,3 +17,6 @@ evaluate
 jiwer
 sentence-transformers
 faiss-cpu
+yt-dlp
+imageio-ffmpeg
+google-generativeai
