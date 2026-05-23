@@ -1005,14 +1005,14 @@ def _audio_watchdog(
         t.join()  # blocks until the loop exits (normally or by exception)
         if attempt < max_restarts:
             msg = (
-                f"⚠️ Bhajan Live Reader — audio loop crashed, "
+                f"⚠️ OpenDevotion — audio loop crashed, "
                 f"restarting ({attempt + 1}/{max_restarts})…"
             )
             print(msg)
             _send_telegram(telegram_token, telegram_chat_id, msg)
             time.sleep(3)
         else:
-            msg = "🚨 Bhajan Live Reader — audio loop failed permanently. Please restart the app."
+            msg = "🚨 OpenDevotion — audio loop failed permanently. Please restart the app."
             print(msg)
             _send_telegram(telegram_token, telegram_chat_id, msg)
 
