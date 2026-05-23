@@ -1,4 +1,4 @@
-"""Bhajan Live Reader — setup launcher."""
+"""OpenDevotion — setup launcher."""
 from __future__ import annotations
 import json
 import os
@@ -128,7 +128,7 @@ class BhajanSearchDialog(tk.Toplevel):
 class LauncherApp(tk.Tk):
     def __init__(self):
         super().__init__()
-        self.title("Bhajan Live Reader")
+        self.title("OpenDevotion")
         self.resizable(False, False)
         # (display_str, pdf_slot_idx, local_bhajan_id)
         self._bhajan_options: list[tuple[str, int, int]] = []
@@ -144,7 +144,7 @@ class LauncherApp(tk.Tk):
         main = ttk.Frame(self, padding=20)
         main.pack(fill=tk.BOTH, expand=True)
 
-        ttk.Label(main, text="Bhajan Live Reader",
+        ttk.Label(main, text="OpenDevotion",
                   font=("Helvetica", 17, "bold")).grid(
             row=0, column=0, columnspan=3, pady=(0, 2))
         ttk.Label(main, text="Live lyric scrolling for performances",
@@ -712,7 +712,7 @@ class LauncherApp(tk.Tk):
 
         viewer = PDFViewer(images, pages_text, doc=doc, master=self,
                            position_tracker=position_tracker)
-        viewer.title("Bhajan Live Reader — Live Session")
+        viewer.title("OpenDevotion — Live Session")
 
         def _on_close():
             viewer.destroy()
@@ -735,7 +735,7 @@ class LauncherApp(tk.Tk):
         ).start()
 
         # Startup ping so you know the session is live
-        _send_telegram(tg_token, tg_chat, "✅ Bhajan Live Reader — session started.")
+        _send_telegram(tg_token, tg_chat, "✅ OpenDevotion — session started.")
 
         # Auto-scroll and lock to first setlist bhajan so user doesn't have to
         if position_tracker is not None and position_tracker.setlist:
