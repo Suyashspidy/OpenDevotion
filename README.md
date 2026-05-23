@@ -1,4 +1,4 @@
-# Bhajan Live Reader
+# OpenDevotion
 
 An AI-powered real-time lyric assistant for live bhajan and keertan performances. Listens to the microphone, identifies the bhajan being sung using a semantic FAISS index built from your PDF songbook, and scrolls the PDF to the correct page automatically.
 
@@ -35,7 +35,7 @@ The IndicWhisper model is fine-tuned specifically on Hindi and Sanskrit bhajan a
 
 ```bash
 git clone <repo-url>
-cd "Voice Assisted PDF Reader"
+cd OpenDevotion
 python -m venv .venv
 .venv\Scripts\activate
 pip install -r voice_pdf_agent/requirements.txt

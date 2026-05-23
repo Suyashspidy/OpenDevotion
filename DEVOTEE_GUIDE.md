@@ -1,4 +1,4 @@
-# Bhajan Live Reader — Devotee Quick-Start Guide
+# OpenDevotion — Quick-Start Guide
 
 *One page. Read once before the keertan.*
 
